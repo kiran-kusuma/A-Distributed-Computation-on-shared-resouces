@@ -1,6 +1,3 @@
-I'll create a README file for the distributed query processing system you've described. This README will provide an overview of the project, its components, setup instructions, and usage guidelines.
-
-```markdown
 # A Distributed Computation for Multi-Tenant Query Processing on large scale distributed data with Shared Resources 
 
 ## Overview
@@ -95,20 +92,3 @@ python app.py
 - `queryexecution.py`: Distributed query engine
 - `templates/`: HTML templates for the web interface
 - `uploads/`: Directory for uploaded and processed data
-
-## Notes
-
-- This system is designed for educational and demonstration purposes.
-- Ensure proper security measures are implemented before using in a production environment.
-- The current implementation uses CSV files and in-memory processing, which may not be suitable for extremely large datasets.
-
-## Contributing
-
-Contributions to improve the system are welcome. Please submit pull requests or open issues for any bugs or feature requests.
-
-## License
-
-[Specify your license here]
-```
-
-This README provides a comprehensive overview of your distributed query processing system. It covers the main components, setup instructions, usage guidelines, and important notes about the project. You may want to customize certain sections, such as the license information, based on your specific project requirements.
