@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Database</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #loading {
+            display: none;
+        }
+        #success {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Upload Database</h2>
+        <form id="uploadForm" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="company_name">Company Name</label>
+                <input type="text" class="form-control" id="company_name" name="company_name" required>
+            </div>
+            <div class="form-group">
+                <label for="file">Upload Database (ZIP file)</label>
+                <input type="file" class="form-control-file" id="file" name="file" required>
+            </div>
+            <button type="submit" class="btn btn-primary" id="uploadBtn">Upload</button>
+            <button class="btn btn-primary" id="loading" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Uploading...
+            </button>
+            <div class="alert alert-success mt-3" id="success" role="alert">
+                Upload completed successfully!
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('uploadForm').onsubmit = function() {
+            document.getElementById('uploadBtn').style.display = 'none';
+            document.getElementById('loading').style.display = 'inline-block';
+            return true;
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+{
+    "WDIcountry-series": {
+        "total_rows": 8237,
+        "total_shards": 1,
+        "shards": [
+            {
+                "shard_index": 0,
+                "row_range": "0-8236",
+                "total_rows": 8237
+            }
+        ]
+    },
+    "WDICountry": {
+        "total_rows": 265,
+        "total_shards": 1,
+        "shards": [
+            {
+                "shard_index": 1,
+                "row_range": "0-264",
+                "total_rows": 265
+            }
+        ]
+    },
+    "WDICSV": {
+        "total_rows": 397936,
+        "total_shards": 6,
+        "shards": [
+            {
+                "shard_index": 2,
+                "row_range": "0-66322",
+                "total_rows": 66323
+            },
+            {
+                "shard_index": 3,
+                "row_range": "66323-132645",
+                "total_rows": 66323
+            },
+            {
+                "shard_index": 4,
+                "row_range": "132646-198968",
+                "total_rows": 66323
+            },
+            {
+                "shard_index": 5,
+                "row_range": "198969-265291",
+                "total_rows": 66323
+            },
+            {
+                "shard_index": 6,
+                "row_range": "265292-331613",
+                "total_rows": 66322
+            },
+            {
+                "shard_index": 7,
+                "row_range": "331614-397935",
+                "total_rows": 66322
+            }
+        ]
+    },
+    "WDIfootnote": {
+        "total_rows": 788559,
+        "total_shards": 10,
+        "shards": [
+            {
+                "shard_index": 8,
+                "row_range": "0-78855",
+                "total_rows": 78856
+            },
+            {
+                "shard_index": 9,
+                "row_range": "78856-157711",
+                "total_rows": 78856
+            },
+            {
+                "shard_index": 10,
+                "row_range": "157712-236567",
+                "total_rows": 78856
+            },
+            {
+                "shard_index": 11,
+                "row_range": "236568-315423",
+                "total_rows": 78856
+            },
+            {
+                "shard_index": 12,
+                "row_range": "315424-394279",
+                "total_rows": 78856
+            },
+            {
+                "shard_index": 13,
+                "row_range": "394280-473135",
+                "total_rows": 78856
+            },
+            {
+                "shard_index": 14,
+                "row_range": "473136-551991",
+                "total_rows": 78856
+            },
+            {
+                "shard_index": 15,
+                "row_range": "551992-630847",
+                "total_rows": 78856
+            },
+            {
+                "shard_index": 16,
+                "row_range": "630848-709703",
+                "total_rows": 78856
+            },
+            {
+                "shard_index": 17,
+                "row_range": "709704-788558",
+                "total_rows": 78855
+            }
+        ]
+    },
+    "WDIseries-time": {
+        "total_rows": 148,
+        "total_shards": 1,
+        "shards": [
+            {
+                "shard_index": 18,
+                "row_range": "0-147",
+                "total_rows": 148
+            }
+        ]
+    },
+    "WDISeries": {
+        "total_rows": 1453,
+        "total_shards": 1,
+        "shards": [
+            {
+                "shard_index": 19,
+                "row_range": "0-1452",
+                "total_rows": 1453
+            }
+        ]
+    }
+}

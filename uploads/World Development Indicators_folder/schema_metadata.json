@@ -1,0 +1,594 @@
+{
+    "WDIcountry-series.csv": {
+        "columns": [
+            {
+                "name": "CountryCode",
+                "type": "object",
+                "references": {
+                    "table": "WDIfootnote.csv",
+                    "column": "CountryCode"
+                }
+            },
+            {
+                "name": "SeriesCode",
+                "type": "object",
+                "references": {
+                    "table": "WDIfootnote.csv",
+                    "column": "SeriesCode"
+                }
+            },
+            {
+                "name": "DESCRIPTION",
+                "type": "object",
+                "references": {
+                    "table": "WDIfootnote.csv",
+                    "column": "DESCRIPTION"
+                }
+            }
+        ]
+    },
+    "WDICountry.csv": {
+        "columns": [
+            {
+                "name": "Country Code",
+                "type": "object",
+                "references": {
+                    "table": "WDICSV.csv",
+                    "column": "Country Code"
+                }
+            },
+            {
+                "name": "Short Name",
+                "type": "object"
+            },
+            {
+                "name": "Table Name",
+                "type": "object"
+            },
+            {
+                "name": "Long Name",
+                "type": "object"
+            },
+            {
+                "name": "2-alpha code",
+                "type": "object"
+            },
+            {
+                "name": "Currency Unit",
+                "type": "object"
+            },
+            {
+                "name": "Special Notes",
+                "type": "object"
+            },
+            {
+                "name": "Region",
+                "type": "object"
+            },
+            {
+                "name": "Income Group",
+                "type": "object"
+            },
+            {
+                "name": "WB-2 code",
+                "type": "object"
+            },
+            {
+                "name": "National accounts base year",
+                "type": "object"
+            },
+            {
+                "name": "National accounts reference year",
+                "type": "float64"
+            },
+            {
+                "name": "SNA price valuation",
+                "type": "object"
+            },
+            {
+                "name": "Lending category",
+                "type": "object"
+            },
+            {
+                "name": "Other groups",
+                "type": "object"
+            },
+            {
+                "name": "System of National Accounts",
+                "type": "object"
+            },
+            {
+                "name": "Alternative conversion factor",
+                "type": "float64"
+            },
+            {
+                "name": "PPP survey year",
+                "type": "float64"
+            },
+            {
+                "name": "Balance of Payments Manual in use",
+                "type": "object"
+            },
+            {
+                "name": "External debt Reporting status",
+                "type": "object"
+            },
+            {
+                "name": "System of trade",
+                "type": "object"
+            },
+            {
+                "name": "Government Accounting concept",
+                "type": "object"
+            },
+            {
+                "name": "IMF data dissemination standard",
+                "type": "object"
+            },
+            {
+                "name": "Latest population census",
+                "type": "object"
+            },
+            {
+                "name": "Latest household survey",
+                "type": "object"
+            },
+            {
+                "name": "Source of most recent Income and expenditure data",
+                "type": "object"
+            },
+            {
+                "name": "Vital registration complete",
+                "type": "object"
+            },
+            {
+                "name": "Latest agricultural census",
+                "type": "object"
+            },
+            {
+                "name": "Latest industrial data",
+                "type": "float64"
+            },
+            {
+                "name": "Latest trade data",
+                "type": "float64"
+            },
+            {
+                "name": "Latest water withdrawal data",
+                "type": "float64"
+            }
+        ]
+    },
+    "WDICSV.csv": {
+        "columns": [
+            {
+                "name": "Country Name",
+                "type": "object"
+            },
+            {
+                "name": "Country Code",
+                "type": "object",
+                "references": {
+                    "table": "WDICountry.csv",
+                    "column": "Country Code"
+                }
+            },
+            {
+                "name": "Indicator Name",
+                "type": "object",
+                "references": {
+                    "table": "WDISeries.csv",
+                    "column": "Indicator Name"
+                }
+            },
+            {
+                "name": "Indicator Code",
+                "type": "object"
+            },
+            {
+                "name": "1960",
+                "type": "float64"
+            },
+            {
+                "name": "1961",
+                "type": "float64"
+            },
+            {
+                "name": "1962",
+                "type": "float64"
+            },
+            {
+                "name": "1963",
+                "type": "float64"
+            },
+            {
+                "name": "1964",
+                "type": "float64"
+            },
+            {
+                "name": "1965",
+                "type": "float64"
+            },
+            {
+                "name": "1966",
+                "type": "float64"
+            },
+            {
+                "name": "1967",
+                "type": "float64"
+            },
+            {
+                "name": "1968",
+                "type": "float64"
+            },
+            {
+                "name": "1969",
+                "type": "float64"
+            },
+            {
+                "name": "1970",
+                "type": "float64"
+            },
+            {
+                "name": "1971",
+                "type": "float64"
+            },
+            {
+                "name": "1972",
+                "type": "float64"
+            },
+            {
+                "name": "1973",
+                "type": "float64"
+            },
+            {
+                "name": "1974",
+                "type": "float64"
+            },
+            {
+                "name": "1975",
+                "type": "float64"
+            },
+            {
+                "name": "1976",
+                "type": "float64"
+            },
+            {
+                "name": "1977",
+                "type": "float64"
+            },
+            {
+                "name": "1978",
+                "type": "float64"
+            },
+            {
+                "name": "1979",
+                "type": "float64"
+            },
+            {
+                "name": "1980",
+                "type": "float64"
+            },
+            {
+                "name": "1981",
+                "type": "float64"
+            },
+            {
+                "name": "1982",
+                "type": "float64"
+            },
+            {
+                "name": "1983",
+                "type": "float64"
+            },
+            {
+                "name": "1984",
+                "type": "float64"
+            },
+            {
+                "name": "1985",
+                "type": "float64"
+            },
+            {
+                "name": "1986",
+                "type": "float64"
+            },
+            {
+                "name": "1987",
+                "type": "float64"
+            },
+            {
+                "name": "1988",
+                "type": "float64"
+            },
+            {
+                "name": "1989",
+                "type": "float64"
+            },
+            {
+                "name": "1990",
+                "type": "float64"
+            },
+            {
+                "name": "1991",
+                "type": "float64"
+            },
+            {
+                "name": "1992",
+                "type": "float64"
+            },
+            {
+                "name": "1993",
+                "type": "float64"
+            },
+            {
+                "name": "1994",
+                "type": "float64"
+            },
+            {
+                "name": "1995",
+                "type": "float64"
+            },
+            {
+                "name": "1996",
+                "type": "float64"
+            },
+            {
+                "name": "1997",
+                "type": "float64"
+            },
+            {
+                "name": "1998",
+                "type": "float64"
+            },
+            {
+                "name": "1999",
+                "type": "float64"
+            },
+            {
+                "name": "2000",
+                "type": "float64"
+            },
+            {
+                "name": "2001",
+                "type": "float64"
+            },
+            {
+                "name": "2002",
+                "type": "float64"
+            },
+            {
+                "name": "2003",
+                "type": "float64"
+            },
+            {
+                "name": "2004",
+                "type": "float64"
+            },
+            {
+                "name": "2005",
+                "type": "float64"
+            },
+            {
+                "name": "2006",
+                "type": "float64"
+            },
+            {
+                "name": "2007",
+                "type": "float64"
+            },
+            {
+                "name": "2008",
+                "type": "float64"
+            },
+            {
+                "name": "2009",
+                "type": "float64"
+            },
+            {
+                "name": "2010",
+                "type": "float64"
+            },
+            {
+                "name": "2011",
+                "type": "float64"
+            },
+            {
+                "name": "2012",
+                "type": "float64"
+            },
+            {
+                "name": "2013",
+                "type": "float64"
+            },
+            {
+                "name": "2014",
+                "type": "float64"
+            },
+            {
+                "name": "2015",
+                "type": "float64"
+            },
+            {
+                "name": "2016",
+                "type": "float64"
+            },
+            {
+                "name": "2017",
+                "type": "float64"
+            },
+            {
+                "name": "2018",
+                "type": "float64"
+            },
+            {
+                "name": "2019",
+                "type": "float64"
+            },
+            {
+                "name": "2020",
+                "type": "float64"
+            },
+            {
+                "name": "2021",
+                "type": "float64"
+            },
+            {
+                "name": "2022",
+                "type": "float64"
+            },
+            {
+                "name": "2023",
+                "type": "float64"
+            }
+        ]
+    },
+    "WDIfootnote.csv": {
+        "columns": [
+            {
+                "name": "CountryCode",
+                "type": "object",
+                "references": {
+                    "table": "WDIcountry-series.csv",
+                    "column": "CountryCode"
+                }
+            },
+            {
+                "name": "SeriesCode",
+                "type": "object",
+                "references": {
+                    "table": "WDIseries-time.csv",
+                    "column": "SeriesCode"
+                }
+            },
+            {
+                "name": "Year",
+                "type": "object",
+                "references": {
+                    "table": "WDIseries-time.csv",
+                    "column": "Year"
+                }
+            },
+            {
+                "name": "DESCRIPTION",
+                "type": "object",
+                "references": {
+                    "table": "WDIcountry-series.csv",
+                    "column": "DESCRIPTION"
+                }
+            }
+        ]
+    },
+    "WDIseries-time.csv": {
+        "columns": [
+            {
+                "name": "SeriesCode",
+                "type": "object",
+                "references": {
+                    "table": "WDIfootnote.csv",
+                    "column": "SeriesCode"
+                }
+            },
+            {
+                "name": "Year",
+                "type": "object",
+                "references": {
+                    "table": "WDIfootnote.csv",
+                    "column": "Year"
+                }
+            },
+            {
+                "name": "DESCRIPTION",
+                "type": "object"
+            }
+        ]
+    },
+    "WDISeries.csv": {
+        "columns": [
+            {
+                "name": "Series Code",
+                "type": "object"
+            },
+            {
+                "name": "Topic",
+                "type": "object"
+            },
+            {
+                "name": "Indicator Name",
+                "type": "object",
+                "references": {
+                    "table": "WDICSV.csv",
+                    "column": "Indicator Name"
+                }
+            },
+            {
+                "name": "Short definition",
+                "type": "object"
+            },
+            {
+                "name": "Long definition",
+                "type": "object"
+            },
+            {
+                "name": "Unit of measure",
+                "type": "object"
+            },
+            {
+                "name": "Periodicity",
+                "type": "object"
+            },
+            {
+                "name": "Base Period",
+                "type": "object"
+            },
+            {
+                "name": "Other notes",
+                "type": "object"
+            },
+            {
+                "name": "Aggregation method",
+                "type": "object"
+            },
+            {
+                "name": "Limitations and exceptions",
+                "type": "object"
+            },
+            {
+                "name": "Notes from original source",
+                "type": "object"
+            },
+            {
+                "name": "General comments",
+                "type": "object"
+            },
+            {
+                "name": "Source",
+                "type": "object"
+            },
+            {
+                "name": "Statistical concept and methodology",
+                "type": "object"
+            },
+            {
+                "name": "Development relevance",
+                "type": "object"
+            },
+            {
+                "name": "Related source links",
+                "type": "object"
+            },
+            {
+                "name": "Other web links",
+                "type": "object"
+            },
+            {
+                "name": "Related indicators",
+                "type": "object"
+            },
+            {
+                "name": "License Type",
+                "type": "object"
+            }
+        ]
+    }
+}

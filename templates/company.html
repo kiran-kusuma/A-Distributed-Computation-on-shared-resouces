@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ company.company_name }} - Distributed Query Engine</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .metadata-box {
+            height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-5">{{ company.company_name }}</h1>
+        
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Status</h5>
+                <p class="card-text">{{ company.status }}</p>
+                {% if company.status == "Uploaded" %}
+                <button id="shardButton" class="btn btn-primary">Shard Data</button>
+                {% endif %}
+            </div>
+        </div>
+
+        {% if company.status == "Sharded and ready to run query" %}
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Schema Metadata</h5>
+                        <pre class="metadata-box">{{ company.schema_metadata }}</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sharding Metadata</h5>
+                        <pre class="metadata-box">{{ company.sharding_metadata }}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="{{ url_for('query_run', company_name=company.company_name) }}" class="btn btn-success">Run Query</a>
+        </div>
+        {% endif %}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#shardButton').click(function() {
+                $.ajax({
+                    url: '/shard/{{ company.company_name }}',
+                    type: 'POST',
+                    success: function(response) {
+                        alert('Data sharded successfully');
+                        location.reload();
+                    },
+                    error: function(xhr, status, error) {
+                        alert('Error sharding data: ' + error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+

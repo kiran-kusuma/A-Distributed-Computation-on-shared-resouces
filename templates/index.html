@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributed Query Engine</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card {
+            margin-bottom: 20px;
+        }
+        .btn {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-5">Welcome to the Distributed Query Engine</h1>
+
+        <!-- Button for uploading database -->
+        <div class="text-center mb-5">
+            <h3>Upload your database here</h3>
+            <a href="{{ url_for('upload') }}" class="btn btn-primary w-25">Upload Database</a>
+        </div>
+
+        <!-- List of uploaded companies -->
+        <h3 class="text-center mb-4">Uploaded Companies</h3>
+
+        {% if companies %}
+        <div class="row">
+            <!-- Loop through the companies and display each one -->
+            {% for company in companies %}
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ company.company_name }}</h5>
+                        <p class="card-text">Status: {{ company.status }}</p>
+                        <a href="{{ url_for('company_page', company_name=company.company_name) }}" class="btn btn-primary">Go to Company Page</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p>No companies uploaded yet. Please upload a database.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
