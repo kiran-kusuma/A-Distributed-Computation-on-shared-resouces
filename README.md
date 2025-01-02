@@ -21,33 +21,36 @@ This project implements a distributed query processing system designed to handle
 4. **Web Interface (app.py)**
    - Flask-based web application for interacting with the system.
    - Provides endpoints for uploading data, sharding, and running queries.
-home page
+
+## home page
+
 ![alt text](image.png)
-Upload Database page
+
+## Upload Database page
+
 ![alt text](image-4.png)
-sharding page
+
+## sharding page
+
 ![alt text](image-1.png)
-querying page
+
+## querying page
+
 ![alt text](image-2.png)
-query result page
+
+## query result page
 ![alt text](image-3.png)
 
 ## Setup
 
 1. Clone the repository:
-```
 
-git clone `<repository-url>`
-cd `<project-directory>`
-
-```plaintext
+`git clone <repository-url>`
+`cd <project-directory>`
 
 2. Install dependencies:
-```
 
-pip install -r requirements.txt
-
-```plaintext
+`pip install -r requirements.txt`
 
 3. Set up the environment:
 - Ensure you have Python 3.7+ installed.
@@ -56,11 +59,8 @@ pip install -r requirements.txt
 ## Usage
 
 1. Start the Flask application:
-```
 
-python app.py
-
-```plaintext
+`python app.py`
 
 2. Access the web interface at `http://localhost:5000`.
 
