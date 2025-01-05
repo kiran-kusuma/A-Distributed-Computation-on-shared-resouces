@@ -16,7 +16,7 @@ class DatabaseMetadataGenerator:
             full_file_path = os.path.join(self.folder_path, filename)
             
             if os.path.isfile(full_file_path) and filename.endswith('.csv'):
-                df = pd.read_csv(full_file_path, encoding='latin-1')  # or 'utf-16'
+                df = pd.read_csv(full_file_path) 
                 columns_and_types = df.dtypes.to_dict()
                 self.tables_info[filename] = columns_and_types
 
@@ -27,8 +27,8 @@ class DatabaseMetadataGenerator:
                     
                     if common_columns:
                         for common_col in common_columns:
-                            df1 = pd.read_csv(os.path.join(self.folder_path, file1),engine='python')
-                            df2 = pd.read_csv(os.path.join(self.folder_path, file2),engine='python')
+                            df1 = pd.read_csv(os.path.join(self.folder_path, file1))
+                            df2 = pd.read_csv(os.path.join(self.folder_path, file2))
                             
                             matching_values = set(df1[common_col]).intersection(set(df2[common_col]))
                             
