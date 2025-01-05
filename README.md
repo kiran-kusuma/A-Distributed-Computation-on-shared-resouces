@@ -56,6 +56,8 @@ This project implements a distributed query processing system designed to handle
 - Ensure you have Python 3.7+ installed.
 - Configure any necessary environment variables (if applicable).
 
+4. Dataset sample download from below link:
+- https://datacatalog.worldbank.org/search/dataset/0037712
 ## Usage
 
 1. Start the Flask application:
