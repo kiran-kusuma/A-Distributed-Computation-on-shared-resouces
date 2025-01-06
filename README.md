@@ -4,6 +4,10 @@
 
 This project implements a distributed query processing system designed to handle large-scale data across multiple companies. It uses a sharding approach to partition data and allows for efficient querying while maintaining data isolation between different companies.
 
+  
+![image](https://github.com/user-attachments/assets/7bfee46d-31d8-44d6-bd77-84ea68949c62)
+
+
 ## Components
 
 1. **Database Sharding (sharding.py)**
@@ -21,6 +25,8 @@ This project implements a distributed query processing system designed to handle
 4. **Web Interface (app.py)**
    - Flask-based web application for interacting with the system.
    - Provides endpoints for uploading data, sharding, and running queries.
+  
+## IEEE paper  'https://github.com/kiran-kusuma/A-Distributed-Computation-on-shared-resouces/blob/main/B18.pdf'
 
 ## home page
 
