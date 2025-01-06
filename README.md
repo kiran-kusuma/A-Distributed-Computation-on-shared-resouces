@@ -4,6 +4,21 @@
 
 This project implements a distributed query processing system designed to handle large-scale data across multiple companies. It uses a sharding approach to partition data and allows for efficient querying while maintaining data isolation between different companies.
 
+
+# a quick explaination
+This project name is distributed compuation on distributed data through a shared resource by different users/companies;
+what motivated us do this, product manager of a company need to query on the large data and get result in seconds due this a network of distributed query on computer of distributed but it cost a fortune to solve this cost we throught how we can share a network of distribution can be utilised by all company as shared resource,
+
+we need to handle data distribution for all companies and save it in each shard container, first of what is shard, shard is piece of data from database or data is divided into several shards; so each node get shard of database 
+
+problem : data distribution for all kind of database of companies and isolation of shard container of each company
+
+solution : sharding through index, this way each shard contains index x-y of table z and no shard contains two different tables data. 
+
+here first step upload your data, then data is sharded into 20 shard as 20 nodes based on index then run the query (only select and when cluse are done not works for every query for present we can do it)
+don't forget every node contain data of several companies shard data containers, so it uses company id to run query on which data container
+
+this way data of all companies get distributed across nodes each will one shard of every company and when run by particular company query is distributed across then network of distributed systems then result will be cupelled to single result to root and result is sent to user 
   
 ![image](https://github.com/user-attachments/assets/7bfee46d-31d8-44d6-bd77-84ea68949c62)
 
